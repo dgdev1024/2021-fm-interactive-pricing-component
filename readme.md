@@ -38,7 +38,7 @@ Users should be able to:
 - There's no easy way to style the range slider. It takes a very creative use of pseudo-selectors and browser-specific pseudo-elements, like...
   - `-webkit-slider-thumb` and `-webkit-slider-runnable-track` on Webkit-based browsers like Chrome and recent versions of Microsoft Edge.
   - `-moz-range-thumb` and `-moz-range-track` on Firefox.
-  - `-moz-range-progress` for styling to the left of the thumb on Firefox, and a very creative use of Javascript and CSS variables to accomplish the same on other browsers.
+  - `-moz-range-progress` for styling to the left of the thumb on Firefox, and a very creative use of Javascript and CSS variables to accomplish the same on other browsers. Initially, I tried dynamically setting the width of the `:after` pseudo-element of the slider using a data attribute. Unfortunately, right now, data attributes only work with the `content` CSS property.
 
 Here's what I did to accomplish styling to the left of the thumb in a cross-browser fashion:
 
@@ -80,7 +80,7 @@ Here's what I did to accomplish styling to the left of the thumb in a cross-brow
 
 ### Continued Development
 
-I would like to look further into how to style sliders, and other input elements introduced in HTML5.
+I would like to look further into how to style sliders, and other input elements introduced in HTML5, and how limited I really am when it comes to using data attributes to affect CSS without Javascript.
 
 ## Author
 
