@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor Challenge | Interactive Pricing Component</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__container">
+        <div class="intro">
+          <h1 class="intro__heading">Simple, traffic-based pricing</h1>
+          <p class="text intro__text">
+            Sign up for our 30-day trial. No credit or debit card required.
+          </p>
+        </div>
+        <div class="pricing">
+          <p class="text pricing__page-views">
+            <span class="pricing__page-view-count">0K</span> pageviews
+          </p>
+          <p class="text pricing__price-per">
+            <span class="pricing__price">$0.00</span>
+            <span class="pricing__per">/ month</span>
+          </p>
+          <input
+            type="range"
+            name="price-range"
+            id="price-range"
+            class="pricing__price-range"
+            min="0"
+            max="4"
+            value="2"
+          />
+          <div class="pricing__billing">
+            <p class="text pricing__billing-text">Monthly Billing</p>
+            <button
+              class="pricing__billing-toggle"
+              aria-label="Toggle Yearly Billing"
+              title="Toggle Yearly Billing"
+              data-yearly="false"
+            ></button>
+            <p class="text pricing__billing-text pricing__billing-text--yearly">
+              Yearly Billing
+            </p>
+          </div>
+          <ul class="pricing__features-list">
+            <li class="text pricing__feature">Unlimited Websites</li>
+            <li class="text pricing__feature">100% Data Ownership</li>
+            <li class="text pricing__feature">Email Reports</li>
+          </ul>
+          <button class="pricing__cta-button">Start My Trial</button>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
